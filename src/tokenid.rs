@@ -92,7 +92,8 @@ pub enum TID {
 
 impl<'a> From<&'a str> for TID {
     fn from(s: &'a str) -> Self {
-        match s {
+        let s_upper: &str = &s.to_uppercase(); // 
+        match s_upper {
             "EXIT" => TID::EXIT,
             "CLOSE" => TID::CLOSE,
             "CLR" => TID::CLR,
