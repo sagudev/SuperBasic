@@ -11,7 +11,7 @@ categories = ["emulators", "games"]
 
 [dependencies]
 clap = "2"
-log = "0.3"
+log = "0.4"
 rand = "0.3"
 dimsum = "0.1.0"
 serde = "1.0"
